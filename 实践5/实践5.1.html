@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>实践5</title>
+  <script type="text/javascript">
+    function jp(price){
+        if(price<1600){
+            document.write("拍卖价格"+price+"<br/>"+"价格太低，竞拍不成功！");
+        }
+        else{
+            alert("拍卖价格"+price+","+"竞拍成功！");
+        }
+    }
+  </script>
+ </head>
+ <body>
+    <p>iPhone 8 plus</p>
+    <p>
+        <input name="jp" type="button" value="开始竞拍！"
+        onclick="jp(prompt('竞拍，请出一口价！',1000))" />
+    </p>
+ </body>
+</html>
